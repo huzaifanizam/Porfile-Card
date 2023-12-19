@@ -1,23 +1,22 @@
-import React, { useEffect ,useState } from 'react';
-import tippy from 'tippy.js';
-import 'tippy.js/dist/tippy.css';
+import React from 'react';
+
 
 import './Porfile.css'
 
 
 const Porfile = () => {
 
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    // const [isDarkMode, setIsDarkMode] = useState(false);
 
-    useEffect(() => {
-        tippy('.link', {
-          placement: 'bottom',
-        });
-      }, []);
+    // useEffect(() => {
+    //     tippy('.link', {
+    //       placement: 'bottom',
+    //     });
+    //   }, []);
 
-      const toggleTheme = () => {
-        setIsDarkMode((prevMode) => !prevMode);
-      };
+    //   const toggleTheme = () => {
+    //     setIsDarkMode((prevMode) => !prevMode);
+    //   };
     
     // const toggle = document.querySelector('.js-change-theme');
     // const body = document.querySelector('body');
@@ -85,7 +84,7 @@ const Porfile = () => {
 	
 	
 	  <div className="absolute top-0 right-0 h-12 w-18 p-4">
-		<button className="js-change-theme focus:outline-none"  onClick={toggleTheme}>{isDarkMode ? '☀️' : '🌙'}</button>
+		<button className="js-change-theme focus:outline-none">  🌙</button>
 	  </div>
 
 </div>
